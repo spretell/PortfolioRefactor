@@ -161,13 +161,13 @@ page 1 : index.html
   }
 
   &__doodle--left {
-    left: 32%;
+    left: 26%;
     top: 58%;
     transform: translate(-54%, -70%) rotate(-14deg);
   }
 
   &__doodle--right {
-    right: 32%;
+    right: 38%;
     top: 58%;
     transform: translate(70%, -65%) rotate(140deg);
   }
@@ -241,10 +241,12 @@ page 1 : index.html
 
   &__image {
     z-index: 2;
-    width: min(1200px, 100vw);
+    width: min(760px, 92vw);
+    height: auto;
+    object-fit: contain;
+    display: block;
     transform-origin: 50% 60%;
     animation: snapTilt 2.4s steps(1, end) infinite;
-    will-change: transform;
   }
 
   /* subtle tilt animation */
@@ -752,6 +754,14 @@ $paper-h: 760px;
     margin-top: 5rem;
   }
 
+  .hero__doodle--left {
+    left: 29%;
+  }
+
+  .hero__doodle--right {
+    right: 36%;
+  }
+
   .hero__subtitle {
     margin-top: 0.6rem;
     font-size: 1rem;
@@ -822,6 +832,33 @@ $paper-h: 760px;
 
 /* desktop breakout */
 @media screen and (min-width: 1024px) {
+  .hero {
+    &__image {
+      width: min(1200px, 100vw); // original desktop sizing
+      animation: snapTilt-desktop 2.4s steps(1, end) infinite;
+    }
+
+    @keyframes snapTilt-desktop {
+      0% {
+        transform: translateX(-10%) translateY(-35px) rotate(-1.5deg);
+      }
+      50% {
+        transform: translateX(-10%) translateY(-35px) rotate(1.5deg);
+      }
+      100% {
+        transform: translateX(-10%) translateY(-35px) rotate(-1.5deg);
+      }
+    }
+
+    &__doodle--left {
+      left: 32%;
+    }
+
+    &__doodle--right {
+      right: 32%;
+    }
+  }
+
   .ink-note {
     margin: 5rem auto -6rem;
     font-size: clamp(1.2rem, 2.4vw, 2rem);
