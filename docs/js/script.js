@@ -184,3 +184,30 @@ document.addEventListener("DOMContentLoaded", () => {
     Object.keys(fields).forEach((key) => setError(key, ""));
   });
 });
+
+// udemy mini touch toggle
+document.addEventListener("DOMContentLoaded", () => {
+  const minis = document.querySelectorAll(".udemy-mini");
+  if (!minis.length) return;
+
+  const isTouch = window.matchMedia(
+    "(hover: none) and (pointer: coarse)"
+  ).matches;
+  if (!isTouch) return;
+
+  minis.forEach((mini) => {
+    mini.addEventListener("click", (e) => {
+      minis.forEach((m) => {
+        if (m !== mini) m.classList.remove("is-open");
+      });
+
+      mini.classList.toggle("is-open");
+    });
+  });
+
+  document.addEventListener("click", (e) => {
+    if (!e.target.closest(".udemy-mini")) {
+      minis.forEach((m) => m.classList.remove("is-open"));
+    }
+  });
+});
