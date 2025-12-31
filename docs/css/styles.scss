@@ -10,22 +10,6 @@ $text-dark: #5c3b3b;
 $radius: 18px;
 $max-width: 1200px;
 
-@font-face {
-  /* downloaded font (dafont.com) */
-  font-family: "Genty";
-  src: url("../fonts/Genty/GentyDemo-Regular.otf") format("opentype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  /* downloaded font (dafont.com) */
-  font-family: "Daniel";
-  src: url("../fonts/Daniel/Daniel.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
 /* - - - - - - - - - - */
 /* global edits */
 /* - - - - - - - - - - */
@@ -125,7 +109,7 @@ page 1 : index.html
   margin: 5rem auto -6rem;
   text-align: center;
   color: #111;
-  font-family: "Daniel", cursive;
+  font-family: "Over the Rainbow", cursive;
   font-size: clamp(1.2rem, 2.4vw, 2rem);
   letter-spacing: 0.12em;
   text-shadow: 0.6px 0.6px 0 rgba(0, 0, 0, 0.12);
@@ -198,7 +182,8 @@ page 1 : index.html
 
   &__name {
     position: absolute;
-    font-family: "Genty", cursive;
+    font-family: "UnifrakturMaguntia", cursive;
+    margin-top: 2rem;
     letter-spacing: 0.2em;
     white-space: nowrap;
     user-select: none;
@@ -342,7 +327,7 @@ $paper-h: 760px;
   gap: 0.35rem;
   line-height: 1.2;
   color: #111;
-  font-family: "Daniel", cursive;
+  font-family: "Over the Rainbow", cursive;
   letter-spacing: 0.04em;
   text-align: left;
 }
@@ -353,7 +338,7 @@ $paper-h: 760px;
 
 .work__bio-title {
   margin: 0 0 0.15rem;
-  font-family: "Daniel", cursive;
+  font-family: "Over the Rainbow", cursive;
   font-size: clamp(1.6rem, 3vw, 2.2rem);
   letter-spacing: 0.18em;
   color: #111;
@@ -361,7 +346,7 @@ $paper-h: 760px;
 
 .work__bio-subtitle {
   margin: 0.35rem 0 0.15rem;
-  font-family: "Daniel", cursive;
+  font-family: "Over the Rainbow", cursive;
   font-size: clamp(1.3rem, 2.4vw, 1.8rem);
 }
 
@@ -760,6 +745,10 @@ $paper-h: 760px;
     margin-top: -110px;
   }
 
+  .hero__name {
+    margin-top: 5rem;
+  }
+
   .hero__subtitle {
     margin-top: 0.6rem;
     font-size: 1rem;
@@ -837,6 +826,10 @@ $paper-h: 760px;
 
   .hero {
     margin-top: -120px;
+  }
+
+  .hero__name {
+    margin-top: 5rem;
   }
 
   .hero__subtitle {
@@ -957,7 +950,7 @@ page 2 : onboarding.html
   content: "";
   position: absolute;
   inset: -420px -360px;
-  background-image: url("../images/spiral.PNG");
+  background-image: url("../images/spiral.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: min(1800px, 200vw);
@@ -1125,7 +1118,7 @@ page 2 : onboarding.html
 
 .onboarding-ending__caption {
   margin-top: -6rem;
-  font-family: "Daniel", cursive;
+  font-family: "Over the Rainbow", cursive;
   font-size: 1.5rem;
   letter-spacing: 0.08em;
   color: #111;
@@ -2406,7 +2399,7 @@ body.udemy .udemy-hero__subtitle {
 }
 
 .udemy-mini__ring-text {
-  font-family: "Daniel", cursive;
+  font-family: "Over the Rainbow", cursive;
   font-size: 10px;
   letter-spacing: 0.18em;
   fill: rgba($mauve, 0.95);
