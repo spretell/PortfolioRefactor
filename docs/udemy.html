@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>udemy ✰ stephi</title>
+
+    <!-- my google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- my icons font -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <!-- my sass link -->
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body class="udemy">
+    <!-- my header nav links -->
+    <header>
+      <nav class="page-selections" aria-label="Primary navigation">
+        <ul class="page-selections__list">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="onboarding.html">ONBOARDING</a></li>
+          <li><a href="contact.html">CONTACT ME</a></li>
+          <li><a href="resume.html">RESUME</a></li>
+          <li><a href="udemy.html" aria-current="page">UDEMY</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main">
+      <!-- udemy page title -->
+      <p
+        class="ink-note ink-note--title"
+        data-text="natours mini project"
+        aria-label="Natours Mini Project"
+      ></p>
+
+      <section class="udemy-hero" aria-label="Udemy project overview">
+        <p class="udemy-hero__subtitle">
+          Inspired by Jonas Schmedtmann’s <em>Advanced CSS & Sass</em>. Below is
+          a recreation of the Natours-style 'tours' cards using BEM, hover
+          animations, gradients, and responsive layout.
+        </p>
+      </section>
+
+      <!-- cards example -->
+      <section class="tours" aria-label="Featured tours">
+        <h2 class="tours__title">featured tours :</h2>
+
+        <div class="tours__grid">
+          <!-- first card -->
+          <article class="tour-card" aria-label="The Sea Explorer tour">
+            <div class="tour-card__side tour-card__side--front">
+              <div
+                class="tour-card__picture tour-card__picture--1"
+                aria-hidden="true"
+              ></div>
+              <h3 class="tour-card__heading">
+                <span
+                  class="tour-card__heading-span tour-card__heading-span--1"
+                >
+                  the sea explorer
+                </span>
+              </h3>
+
+              <ul class="tour-card__details">
+                <li>3 day tour</li>
+                <li>up to 30 people</li>
+                <li>2 tour guides</li>
+                <li>sleep in cozy hotels</li>
+                <li>difficulty: easy</li>
+              </ul>
+            </div>
+
+            <div
+              class="tour-card__side tour-card__side--back tour-card__side--back-1"
+            >
+              <div class="tour-card__cta">
+                <p class="tour-card__price-only">only</p>
+                <p class="tour-card__price-value">$297</p>
+                <a href="#" class="tour-card__btn">book now ✰</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- second card -->
+          <article class="tour-card" aria-label="The Forest Hiker tour">
+            <div class="tour-card__side tour-card__side--front">
+              <div
+                class="tour-card__picture tour-card__picture--2"
+                aria-hidden="true"
+              ></div>
+              <h3 class="tour-card__heading">
+                <span
+                  class="tour-card__heading-span tour-card__heading-span--2"
+                >
+                  the forest hiker
+                </span>
+              </h3>
+
+              <ul class="tour-card__details">
+                <li>7 day tour</li>
+                <li>up to 40 people</li>
+                <li>6 tour guides</li>
+                <li>sleep in provided tents</li>
+                <li>difficulty: medium</li>
+              </ul>
+            </div>
+
+            <div
+              class="tour-card__side tour-card__side--back tour-card__side--back-2"
+            >
+              <div class="tour-card__cta">
+                <p class="tour-card__price-only">only</p>
+                <p class="tour-card__price-value">$497</p>
+                <a href="#" class="tour-card__btn">book now ✰</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- third card -->
+          <article class="tour-card" aria-label="The Snow Adventurer tour">
+            <div class="tour-card__side tour-card__side--front">
+              <div
+                class="tour-card__picture tour-card__picture--3"
+                aria-hidden="true"
+              ></div>
+              <h3 class="tour-card__heading">
+                <span
+                  class="tour-card__heading-span tour-card__heading-span--3"
+                >
+                  the snow adventurer
+                </span>
+              </h3>
+
+              <ul class="tour-card__details">
+                <li>5 day tour</li>
+                <li>up to 15 people</li>
+                <li>3 tour guides</li>
+                <li>sleep in cozy cabins</li>
+                <li>difficulty: hard</li>
+              </ul>
+            </div>
+
+            <div
+              class="tour-card__side tour-card__side--back tour-card__side--back-3"
+            >
+              <div class="tour-card__cta">
+                <p class="tour-card__price-only">only</p>
+                <p class="tour-card__price-value">$897</p>
+                <a href="#" class="tour-card__btn">book now ✰</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- reflection -->
+      <section class="udemy-reflection" aria-label="Course reflection">
+        <!-- paperclip image w paragraph -->
+        <div class="udemy-reflection__paper">
+          <img
+            src="images/paperclippaper.PNG"
+            alt=""
+            aria-hidden="true"
+            class="udemy-reflection__paper-img"
+          />
+
+          <div class="udemy-reflection__paper-content">
+            <h2 class="udemy-reflection__title">
+              course reflection :
+              <span class="udemy-reflection__subtitle"
+                >where i used advanced css</span
+              >
+            </h2>
+
+            <p class="udemy-reflection__text">
+              Throughout my refactored portfolio, I pulled different techniques
+              from Jonas Schmedtmann’s <em>Advanced CSS and Sass</em> course and
+              applied them to the pages and their elements. I followed his
+              “think, build, architect” mindset by planning the layout for each
+              page with clean SASS structure, BEM, and accessibility in mind.
+            </p>
+          </div>
+        </div>
+
+        <!-- bullet points circles -->
+        <div class="udemy-reflection__grid">
+          <!-- 1 -->
+          <article class="udemy-mini" aria-label="Natours cards reflection">
+            <svg
+              class="udemy-mini__ring"
+              viewBox="0 0 120 120"
+              aria-hidden="true"
+            >
+              <defs>
+                <path
+                  id="ring-natours"
+                  d="M60,60 m-46,0 a46,46 0 1,1 92,0 a46,46 0 1,1 -92,0"
+                ></path>
+              </defs>
+              <text class="udemy-mini__ring-text">
+                <textPath href="#ring-natours">
+                  CARDS ✰ CARDS ✰ CARDS ✰ CARDS ✰ CARDS ✰
+                </textPath>
+              </text>
+            </svg>
+
+            <div class="udemy-mini__center">
+              <p class="udemy-mini__top">Natours cards</p>
+              <p class="udemy-mini__hover">
+                I recreated the Natours card component with a 3D flip hover
+                using perspective, backface-visibility, and rotateY().
+              </p>
+            </div>
+          </article>
+
+          <!-- 2 -->
+          <article class="udemy-mini" aria-label="Responsiveness reflection">
+            <svg
+              class="udemy-mini__ring"
+              viewBox="0 0 120 120"
+              aria-hidden="true"
+            >
+              <defs>
+                <path
+                  id="ring-responsive"
+                  d="M60,60 m-46,0 a46,46 0 1,1 92,0 a46,46 0 1,1 -92,0"
+                ></path>
+              </defs>
+              <text class="udemy-mini__ring-text">
+                <textPath href="#ring-responsive">
+                  RESPONSIVE ✰ RESPONSIVE ✰ RESPONSIVE ✰ RESPONSIVE ✰
+                </textPath>
+              </text>
+            </svg>
+
+            <div class="udemy-mini__center">
+              <p class="udemy-mini__top">Responsiveness</p>
+              <p class="udemy-mini__hover">
+                I built the site mobile-first, then added tablet + desktop
+                breakpoints at 600px and 1024px.
+              </p>
+            </div>
+          </article>
+
+          <!-- 3 -->
+          <article class="udemy-mini" aria-label="Hover transitions reflection">
+            <svg
+              class="udemy-mini__ring"
+              viewBox="0 0 120 120"
+              aria-hidden="true"
+            >
+              <defs>
+                <path
+                  id="ring-hover"
+                  d="M60,60 m-46,0 a46,46 0 1,1 92,0 a46,46 0 1,1 -92,0"
+                ></path>
+              </defs>
+              <text class="udemy-mini__ring-text">
+                <textPath href="#ring-hover">
+                  HOVER ✰ HOVER ✰ HOVER ✰ HOVER ✰ HOVER ✰
+                </textPath>
+              </text>
+            </svg>
+
+            <div class="udemy-mini__center">
+              <p class="udemy-mini__top">Hover transitions</p>
+              <p class="udemy-mini__hover">
+                I applied smooth hover transitions on interactive elements like
+                preview stacks, links, and buttons.
+              </p>
+            </div>
+          </article>
+
+          <!-- 4 -->
+          <article class="udemy-mini" aria-label="Animations reflection">
+            <svg
+              class="udemy-mini__ring"
+              viewBox="0 0 120 120"
+              aria-hidden="true"
+            >
+              <defs>
+                <path
+                  id="ring-animations"
+                  d="M60,60 m-46,0 a46,46 0 1,1 92,0 a46,46 0 1,1 -92,0"
+                ></path>
+              </defs>
+              <text class="udemy-mini__ring-text">
+                <textPath href="#ring-animations">
+                  ANIMATIONS ✰ ANIMATIONS ✰ ANIMATIONS ✰ ANIMATIONS ✰
+                </textPath>
+              </text>
+            </svg>
+
+            <div class="udemy-mini__center">
+              <p class="udemy-mini__top">Animations</p>
+              <p class="udemy-mini__hover">
+                I used keyframes for controlled motion like the ticker and
+                subtle snap-like motion on visuals.
+              </p>
+            </div>
+          </article>
+
+          <!-- 5 -->
+          <article class="udemy-mini" aria-label="Reveal effects reflection">
+            <svg
+              class="udemy-mini__ring"
+              viewBox="0 0 120 120"
+              aria-hidden="true"
+            >
+              <defs>
+                <path
+                  id="ring-reveal"
+                  d="M60,60 m-46,0 a46,46 0 1,1 92,0 a46,46 0 1,1 -92,0"
+                ></path>
+              </defs>
+              <text class="udemy-mini__ring-text">
+                <textPath href="#ring-reveal">
+                  REVEAL ✰ REVEAL ✰ REVEAL ✰ REVEAL ✰ REVEAL ✰
+                </textPath>
+              </text>
+            </svg>
+
+            <div class="udemy-mini__center">
+              <p class="udemy-mini__top">Reveal effects</p>
+              <p class="udemy-mini__hover">
+                On the resume page, IntersectionObserver triggers slide-in
+                reveals as the user scrolls.
+              </p>
+            </div>
+          </article>
+
+          <!-- 6 -->
+          <article class="udemy-mini" aria-label="Blur-in reveal reflection">
+            <svg
+              class="udemy-mini__ring"
+              viewBox="0 0 120 120"
+              aria-hidden="true"
+            >
+              <defs>
+                <path
+                  id="ring-blur"
+                  d="M60,60 m-46,0 a46,46 0 1,1 92,0 a46,46 0 1,1 -92,0"
+                ></path>
+              </defs>
+              <text class="udemy-mini__ring-text">
+                <textPath href="#ring-blur">
+                  BLUR ✰ BLUR ✰ BLUR ✰ BLUR ✰ BLUR ✰ BLUR ✰
+                </textPath>
+              </text>
+            </svg>
+
+            <div class="udemy-mini__center">
+              <p class="udemy-mini__top">Blur-in reveal</p>
+              <p class="udemy-mini__hover">
+                I added a blur + fade reveal for the resume preview image so it
+                appears smoothly.
+              </p>
+            </div>
+          </article>
+
+          <!-- 7 -->
+          <article class="udemy-mini" aria-label="Form validation reflection">
+            <svg
+              class="udemy-mini__ring"
+              viewBox="0 0 120 120"
+              aria-hidden="true"
+            >
+              <defs>
+                <path
+                  id="ring-forms"
+                  d="M60,60 m-46,0 a46,46 0 1,1 92,0 a46,46 0 1,1 -92,0"
+                ></path>
+              </defs>
+              <text class="udemy-mini__ring-text">
+                <textPath href="#ring-forms">
+                  FORMS ✰ FORMS ✰ FORMS ✰ FORMS ✰ FORMS ✰
+                </textPath>
+              </text>
+            </svg>
+
+            <div class="udemy-mini__center">
+              <p class="udemy-mini__top">Form validation</p>
+              <p class="udemy-mini__hover">
+                The contact page includes validation states (errors + success
+                message).
+              </p>
+            </div>
+          </article>
+
+          <!-- 8 -->
+          <article class="udemy-mini" aria-label="Reduced motion reflection">
+            <svg
+              class="udemy-mini__ring"
+              viewBox="0 0 120 120"
+              aria-hidden="true"
+            >
+              <defs>
+                <path
+                  id="ring-accessibility"
+                  d="M60,60 m-46,0 a46,46 0 1,1 92,0 a46,46 0 1,1 -92,0"
+                ></path>
+              </defs>
+              <text class="udemy-mini__ring-text">
+                <textPath href="#ring-accessibility">
+                  ACCESSIBILITY ✰ ACCESSIBILITY ✰ ACCESSIBILITY ✰
+                </textPath>
+              </text>
+            </svg>
+
+            <div class="udemy-mini__center">
+              <p class="udemy-mini__top">Reduced motion</p>
+              <p class="udemy-mini__hover">
+                I added prefers-reduced-motion support to disable key animations
+                and scroll reveals.
+              </p>
+            </div>
+          </article>
+        </div>
+        <p class="udemy-thankyou js-reveal reveal-blur">
+          thank you for checking out my portfolio<br />
+          <span class="udemy-thankyou__emote">(ㅅ´ ˘ `)♡</span>
+        </p>
+      </section>
+
+      <!-- my back home button -->
+      <div class="page-buttons">
+        <a href="index.html" class="next-button"><span>back home ✰</span></a>
+      </div>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="footer__socials">
+        <a href="https://www.instagram.com/s.tephhii/" aria-label="Instagram">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/stephaniepretell/"
+          aria-label="LinkedIn"
+        >
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a
+          href="https://facebook.com/stephanie.pretell.5"
+          aria-label="Facebook"
+        >
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+      </div>
+      <p class="footer__copy">© 2025 ✰ Stephanie Pretell</p>
+    </footer>
+
+    <!-- my script link -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
